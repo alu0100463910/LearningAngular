@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+    <head>
+        <title>First title</title>
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+
+    <body>
+            <div ng-controller="DivideCtrl">
+                <div>
+                    Enter Value 1: <input type="text" ng-model="numberData.value1" />
+                </div>
+                <div>
+                    Enter Value 2: <input type="text" ng-model="numberData.value2" />
+                </div>
+                <button ng-click=divide(numberData.value1,numberData.value2) >
+                    Press to Calculate {{numberData.value1}} / {{numberData.value2}}
+                </button>
+            </div>
+                <button ng-click=divide(numberData.value1,numberData.value2) >
+                    Press to Calculate {{numberData.value1}} / {{numberData.value2}}
+                </button>
+    </body>
+</html>
