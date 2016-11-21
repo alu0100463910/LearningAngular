@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+    <head>
+        <title>First title</title>
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+
+    <body>
+            <div ng-controller="AppCtrl">
+                {{model.firstName}}{{testFunction()}}
+                <input ng-model="testInput" type="text">
+                {{testInput}}
+            </div>
+    </body>
+</html>
