@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+    <head>
+        <title>Custom Filters</title>
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+
+    <body>
+            <div ng-controller="appController">
+                <p> {{description}} </p>
+
+                <ul ng-repeat="food in specialsList">
+                    <li>Food name: {{food.name | dashes}} </li>
+                    <li>Food price: {{food.priceInDollars | currency}} </li>
+                </ul>
+            </div>
+    </body>
+</html>
