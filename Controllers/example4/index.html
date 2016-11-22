@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+    <head>
+        <title>First title</title>
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+
+    <body >
+            <div ng-controller="myCtrl">
+                {{value}}
+            </div>
+            
+            <div ng-controller="anotherCtrl as aCtrl">
+                {{aCtrl.value}}
+            </div>
+    </body>
+</html>
