@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Angular Partial templates</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="app.js" ></script>
+
+        <style>
+                input.ng-dirty.ng-valid {
+                    background-color: #3a7d34;
+                }
+        </style>
+     </head>
+     <body ng-app="myApp">
+        <div ng-controller="myCtrl">
+            <h3> Fill out your contact information below: </h3>
+
+            <form name="myTestForm" novalidate>
+                Enter your fist name: <input ng-model="model.fistName" required /><br>
+                Enter your last name: <input ng-model="model.lastName" required /><br>
+                Enter your contact number: <input ng-model="model.contact" required ng-minlength="4"/><br>
+                Enter your contact email: <input ng-model="model.email" required type="email"/><br>
+                Enter your ppostal code: <input ng-model="model.postalCode" required ng-pattern="/[A-Z]\d[A-Z] \d[A-Z]\d/" /><br>
+
+                <button ng-click="submitForm(myTestForm)">Submit</button>
+            </form>
+
+            <div style="margin-top:20px;">{{model}}</div>
+        </div>
+     </body>
+</html>
