@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>Angulas</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="controllers/SpecialsListCtrl.js" ></script>
+     </head>
+     <body>
+         <div ng-controller="SpecialsListCtrl">
+             <p> {{description}}</p>
+
+             <ul ng-repeat="food in specialsList">
+                 <li>Food name: {{food.name | uppercase}}</li>
+                 <li>Special available on :  {{food.specialDate}}</li>
+                 <li>Normal price: {{food.priceInDollars | currency}} </li>
+                 <li>Special price: {{food.salePriceInDollars | currency}} </li>
+             </ul>
+         </div>
+     </body>
+</html>
