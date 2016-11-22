@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Angular Partial templates</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="app.js" ></script>
+     </head>
+     <body>
+         <div ng-controller="myCtrl">
+             <div id="header">
+                Header
+                <span ng-include src='social'></span>
+            </div>
+            <div id="content">
+                Content
+            </div>
+            <div id="footer">
+                Footer
+                <ul>
+                    <li> <a href="http://www.twiter.com"> Go to Twitter Feed</a> </li>
+                    <li> <a href="http://www.linkedin.com"> Go to Linked In</a> </li>
+                    <li> <a href="http://www.facebook.com"> Go to Facebook Page</a> </li>
+                </ul>
+            </div>
+         </div>
+     </body>
+</html>
