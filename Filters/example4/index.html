@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Angulas</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="app.js" ></script>
+     </head>
+     <body>
+         <div ng-controller="myCtrl">
+             <h2>Number filter</h2>
+                <p>{{12.1231231231231 | number}}</p>
+                <p>{{12.1231231231231 | number:5}}</p>
+                <p>{{12 | number:5}}</p>
+             <h2>Json filter</h2>
+
+             <p>Json: {{model | json}} </p>
+              <p>Array format: {{model}} </p>
+         </div>
+     </body>
+</html>
