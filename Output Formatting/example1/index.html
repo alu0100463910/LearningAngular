@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Angular Partial templates</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="app.js" ></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+     </head>
+     <body >
+        <div ng-controller="appController">
+            <p>Hello World</p>
+        </div>
+        
+        <p>Here is value: {{value}} </p>
+
+        <form name="testForm">
+            <p>Enter your name:</p>
+            <input ng-model='userInput' name="userInput" type="text">
+        </form>
+
+     </body>
+</html>

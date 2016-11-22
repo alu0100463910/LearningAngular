@@ -1,0 +1,19 @@
+body{
+    background:#efefef;
+}
+
+.ng-scope{
+    color:red;
+}
+
+.ng-binding{
+    color:blue;
+}
+
+.ng-pristine{
+    background-color:aqua;
+}
+
+.ng-dirty{
+    background-color: blue;
+}
