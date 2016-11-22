@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Angulas</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="app.js" ></script>
+     </head>
+     <body>
+         <div ng-controller="appController">
+             <h2>Number filter</h2>
+                <p>Fist Name: {{model.firstName}}</p>
+                <p>Last Name: {{model.lastName}}</p>
+
+                <p>Enter your first name</p>
+                <input ng-model='model.firstName' type='text' name='firstName'>
+                <p>Enter your last name</p>
+                <input ng-model='model.lastName' type='text' name='lastName'>
+         </div>
+     </body>
+</html>
