@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+    <head>
+
+        <link href="_bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code/jquery.com/jquery.js"></script>
+        <script src="_bootstrap/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+        <title>Custom Filters</title>
+
+    </head>
+
+    <body>
+            <div ng-controller="myCtrl">
+                <ul ng-repeat="country in countryInfo | orderBy:'capital' | limitTo:2">
+                    <li>
+                        <p>
+                            <strong>Country:</strong> {{country.capital}}, {{country.name}}
+                            <strong>Population: </strong> {{country.pop}}
+                        </p> 
+                    <li>
+                </ul>
+            </div>
+    </body>
+</html>
