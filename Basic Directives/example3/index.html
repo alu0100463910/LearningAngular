@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Using partials with ng-include</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="app.js" ></script>
+        <script type="text/javascript" src="script.js" ></script>
+     </head>
+     <body>
+         <div ng-controller="appController">
+             
+             <p>In scope</p>
+             <p> {{firstName}} </p>
+             <p> {{lastName}} </p>
+
+             <a href="#" ng-click="setName('Fabius','Fabiae')">Set Name</a>
+             <a href="#" onclick="randomFunction(this)">Call random function</a>
+
+         </div>
+
+         <p> oUT OF sCOPe </p>
+         <a href="#" ng-click="setName('Fabius','Fabiae')">Set Name</a>
+         <a href="#" onclick="randomFunction()">Call random function</a>
+
+     </body>
+</html>
