@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>Angulas</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="controllers/CarCtrl.js" ></script>
+     </head>
+     <body>
+         <div ng-controller="CarCtrl">
+             
+             <p>{{description}}</p>
+
+             <ul ng-repeat="car in cars">
+                 <li>{{car.make}}</li>
+                 <li>{{car.model}}</li>
+                 <li>{{car.year}}</li>
+             </ul>
+
+             <p ng-repeat="car in cars">The make of your car is: {{car.make}} </p>
+         </div>
+     </body>
+</html>
