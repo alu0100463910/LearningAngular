@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Using partials with ng-include</title>
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="app.js" ></script>
+     </head>
+     <body>
+         <div ng-controller="myCtrl">
+             Value{{value}}
+             <button ng-click="value=value-1">Single click me ! </button>
+             <button ng-dblclick="value=value+1">Double click me ! </button>
+            
+         </div>
+
+     </body>
+</html>
